@@ -1,0 +1,214 @@
+.pricing-plans {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.firstBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.firstBox-title h5{
+    text-align: center;
+   font-size: 14px;
+    font-weight: 700;
+    line-height: 50.6px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.title img{
+    margin-left: 0px
+}
+
+.pf{
+    font-family:'Plus_Jakarta_Sans' ;
+    color: #7E7E7E;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Learn {
+    font-family: 'Plus_Jakarta_Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    color: #2EBB77;
+    text-decoration-line: none;
+}
+
+.Learn img{
+    margin-left: 10px;
+}
+
+
+.firstBox-plans{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 10px 20px 64px 0px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+
+.PlanBenefits{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-right: 1px solid #E5E5E5;
+}
+
+.PlanBenefits h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 30px; /* Adjust based on icon size */
+    margin-bottom: 10px; /* Adjust spacing between items */
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust based on icon size */
+    height: 20px; /* Adjust based on icon size */
+    background-image: url('images/icons/listItem.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.get-started {
+    width: 357.69px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: rgba(46, 187, 119, 1);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.TopPricing{
+    display: flex;
+    flex-direction: column;
+}
+
+.TopPricing h2{
+    width: 153px;
+    height: 23px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.TopPricing p{
+    font-family: 'Plus_Jakarta_Sans';
+    font-size: 15px;
+    font-weight: 500;
+    color: #7E7E7E;
+    margin: 0px;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 275px; /* Adjust based on your design */
+    height: 49px; /* Adjust based on your design */
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
+    margin-right: 50px;
+
+}
+
+.slider-option {
+    width: 50%; /* Adjusted to fit within the container */
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: #7E7E7E; /* Default color for unselected options */
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.slider-option.selected {
+    color: black; /* Color for the selected option */
+}
+
+.slider-highlight {
+    position: absolute;
+    width: calc(50% - 5px); /* Adjusted to fit within the container, considering padding */
+    height: calc(100% - 10px); /* Adjusted to fit within the container, considering padding */
+    background-color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    z-index: 0;
+    top: 5px; /* Adjusted to fit within the container */
+    left: 5px; /* Adjusted to fit within the container */
+}
+
+.price-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.current-price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-right: 20px;
+}
+
+.old-price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: bottom;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-decoration: line-through;
+    color: #7E7E7E;
+}

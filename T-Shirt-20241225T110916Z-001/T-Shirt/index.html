@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="PricingPlansStyle.css">
+
+</head>
+<body>
+    <div class="headerBox">
+        <div class="firstLine">
+            <div class="socials">
+                <a href="https://www.x.com" target="_blank">
+                    <img src="images/icons/twitter.svg" alt="Twitter Logo">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/icons/facebook.svg" alt="Facebook Logo">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/icons/insta.svg" alt="Instagram Logo">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="images/icons/youtube.svg" alt="Youtube Logo">
+                </a>
+            </div>
+            <div class="free_shipping">
+                <img src="images/icons/fire_icon.svg" alt="fireFill">
+                <a href="">
+                    Free shipping on all U.S. orders $50+
+                </a>
+            </div>
+            <div class="user_options">
+                <a href="">Login</a>
+                <a href="" class="sgnUpBut">
+                    <img src="images/icons/signUp_button.svg" alt="sgnUp">
+                </a>
+            </div>
+        </div>
+        <div class="secondLine">
+            <div class="menus">
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">TEESPACE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">SHOP</button>
+                    <div class="dropdown-content">
+                        <a href="#" id="pricing-plans-link">Pricing Plans</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">BLOG</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PAGES</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <img src="images/icons/LogoTee.svg" alt="Logo" class="logo">
+            <div class="SecondLnRightSide">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <div class="icon-container">
+                    <img src="images/icons/star.svg" alt="Star" class="icon" id="star-icon">
+                    <span class="counter" id="star-counter">0</span>
+                </div>
+                <div class="icon-container">
+                    <img src="images/icons/cart.svg" alt="Cart" class="icon" id="cart-icon">
+                    <span class="counter" id="cart-counter">0</span>
+                </div>
+                <div id="star-popup" class="popup">
+                    <h3>Starred Items</h3>
+                    <ul id="starred-items">
+                        <!-- Starred items will be listed here -->
+                    </ul>
+                </div>
+                <div id="cart-popup" class="popup">
+                    <h3>Cart Items</h3>
+                    <ul id="cart-items">
+                        <!-- Cart items will be listed here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="ShopHeader">
+        <h1>Shop</h1>
+        <p>Home<img src="images\icons\__before.svg" alt="bef">Shop</p>
+    </div>
+
+    <div class="bigContainer">
+        <div class="bigSortingList">
+            <div class="sorting-option">
+                <h3>Search Products</h3>
+                <div class="search-container">
+                    <input type="text" id="product-search" class="product-search" placeholder="Search...">
+                    <img src='images/icons/searchIcon.svg' alt="Search Icon" class="search-icon">
+                </div>
+            </div>
+            <div class="sorting-option">
+                <h3>Filter by Categories</h3>
+                <ul id="category-filter">
+                    <!-- Category filter options will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="sorting-option">
+                <h3>Filter by Price</h3>
+                <div id="price-slider">
+                    <div id="slider-track"></div>
+                    <div id="slider-handle-left" class="slider-handle"></div>
+                    <div id="slider-handle-right" class="slider-handle"></div>
+                </div>
+                <span id="price-range"></span>
+            </div>
+            <div class="sorting-option">
+                <h3>Filter by Colors</h3>
+                <ul id="color-filter">
+                    <li data-color="Red">
+                        <span class="filter-color-circle" style="background-color: #DD3333;"></span>
+                        Red
+                        <span class="item-counter">0</span>
+                    </li>
+                    <li data-color="Blue">
+                        <span class="filter-color-circle" style="background-color: blue;"></span>
+                        Blue
+                        <span class="item-counter">0</span>
+                    </li>
+                    <li data-color="Green">
+                        <span class="filter-color-circle" style="background-color: green;"></span>
+                        Green
+                        <span class="item-counter">0</span>
+                    </li>
+                    <li data-color="Black">
+                        <span class="filter-color-circle" style="background-color: Black;"></span>
+                        Black
+                        <span class="item-counter">0</span>
+                    </li>
+                    <li data-color="White">
+                        <span class="filter-color-circle" style="background-color: White;"></span>
+                        White
+                        <span class="item-counter">0</span>
+                    </li>
+                    <li data-color="Yellow">
+                        <span class="filter-color-circle" style="background-color: Yellow;"></span>
+                        Yellow
+                        <span class="item-counter">0</span>
+                    </li>
+                    <!-- Add more colors as needed -->
+                </ul>
+            </div>
+            <div class="sorting-option">
+                <h3>Filter by Sizes</h3>
+                <ul id="size-filter">
+                    <!-- Size filter options will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="sorting-option">
+                <h3>Stock Status</h3>
+                <ul id="stock-status-filter">
+                    <li data-status="on-sale">On Sale</li>
+                    <li data-status="in-stock">In Stock</li>
+                </ul>
+            </div>
+        </div>
+        <div class="shopMainbox">
+            <div class="upperProductOptions">
+                <p>Showing 1–12 of 16 results</p>
+                <div class="upperSorting">
+                    <select id="sort-options" class="sort-options">
+                        <option value="default">Sort by</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                    <div class="view-options">
+                        <img src="images/icons/gridVector.svg" alt="Grid View" id="grid-view-icon" class="view-icon">
+                        <img src="images/icons/listVector.svg" alt="List View" id="list-view-icon" class="view-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="productsGrid"></div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+    <div class="footerUp">
+        <div class="footerUpFirst">
+            <img src="images/icons/LogoTee.svg" alt="Logo">
+            <p>hello@teespace.io</p>
+            <h4>+02 036 038 3996</h4>
+            <p>3665 Paseo Place, Suite 0960<br>San Diego</p>
+        </div>
+        <div class="information">
+            <h3>Information</h3>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+        </div>
+        <div class="useLinks">
+            <h3>Useful Links</h3>
+                <a href="">My Account</a>
+                <a href="">Shipping</a>
+                <a href="">Contact & Support</a>
+                <a href="">All Products</a>
+                <a href="">Design Product</a>
+        </div>
+        <div class="question">
+            <h3>Any questions</h3>
+                <a href="mailto:hello@teespace.com">hello@teespace.com</a>
+                <p>Find answers to all of your questions</p>
+                <div class="socialsBottom">
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="images/icons/twitter.svg" alt="Twitter Logo">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/icons/facebook.svg" alt="Facebook Logo">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/icons/insta.svg" alt="Instagram Logo">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="images/icons/youtube.svg" alt="Youtube Logo">
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images\icons\footer-payment-method.png.svg" alt="payLogos">
+        <p>© 2022 TeeSpace. All rights reserved.</p>
+    </div>
+    <script src="dropdown.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
